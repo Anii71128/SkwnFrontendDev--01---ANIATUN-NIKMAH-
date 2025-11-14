@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deisor Furniture</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="navbar scroll-animate slide-down">
+      <div class="nav-container">
+        <div class="logo scroll-animate slide-left">
+          <img src="assets/logo.png" alt="Logo" class="logo-icon" />
+          <span>Dekoor</span>
+        </div>
+
+        <!-- Tombol hamburger (hanya muncul di mobile) -->
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation links -->
+        <nav class="nav-links scroll-animate fade-in" id="nav-links">
+          <a href="#about">About us</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Furniture
+              <img src="assets/arrow.png" alt="arrow" class="arrow-icon" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#service">Living Room</a>
+              <a href="#service">Bedroom</a>
+              <a href="#service">Office</a>
+              <a href="#service">Gaming room</a>
+            </div>
+          </div>
+          <a href="#partner">Partnerships</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Right-side buttons -->
+        <div class="nav-buttons scroll-animate slide-right" id="nav-buttons">
+          <button class="btn-signup">Sign Up</button>
+          <button class="btn-cart" id="openCart">
+            <img src="assets/bag.png" alt="Cart" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero scroll-animate slide-up">
+      <div class="hero-left slide-left scroll-animate">
+        <h1 class="scroll-animate slide-up">
+          the kind of <br /><span>furniture</span> you have<br />
+          been looking for
+        </h1>
+        <div class="hero-buttons scroll-animate fade-in">
+          <button class="btn-primary" id="searchCatalog">
+            <i class="fa fa-search"></i> Search Catalog
+          </button>
+
+          <button class="btn-outline">
+            <img src="assets/play.png" alt="Play" class="btn-icon" />
+            Watch Videos
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-right scroll-animate slide-right">
+        <img src="assets/hero.png" alt="Posht Sofa" />
+        <div class="product-overlay scroll-animate fade-in">
+          <span class="price">$329</span>
+          <h2>Pösht Sofa</h2>
+          <button class="btn-dark">
+            VIEW DETAILS
+            <img src="assets/arrow2.png" alt="arrow" class="btn-arrow" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="about">
+      <section class="features scroll-animate slide-up">
+        <p class="features-subtitle">WHY CHOOSE US?</p>
+        <h2>We care about details and the quality<br />of our products</h2>
+
+        <div class="details scroll-animate fade-in">
+          <div class="feature-item">
+            <div class="icon-box">
+              <img src="assets/seacrh.png" alt="Quality Materials" />
+            </div>
+            <p>MANUFACTURED WITH<br />QUALITY MATERIALS</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon-box">
+              <span>5</span>
+            </div>
+            <p>5 YEARS OF WARRANTY<br />FOR EACH PRODUCT</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon-box">
+              <img src="assets/tas.png" alt="Expertise" />
+            </div>
+            <p>20 YEARS OF EXPERTISE</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- PARTNER + FURNITURE SECTION -->
+    <section id="partner">
+      <section class="partner-furniture scroll-animate slide-up">
+        <!-- TOP: Partner Brands -->
+        <div class="partner-section">
+          <div class="partner-text">
+            <h2>25+</h2>
+            <p>Partnered Brands</p>
+          </div>
+          <div class="brand-list">
+            <img src="assets/gusto.png" alt="Gusto" />
+            <img src="assets/stripe.png" alt="Stripe" />
+            <img src="assets/treehouse.png" alt="Treehouse" />
+            <img src="assets/upwork.png" alt="Upwork" />
+          </div>
+        </div>
+
+        <!-- BOTTOM: Furniture Recommendations -->
+        <section id="service">
+          <div class="furniture-section">
+            <!-- Left: Gallery -->
+
+            <div class="furniture-gallery">
+              <img src="assets/room3.png" alt="Living Room 1" />
+              <img src="assets/room2.png" alt="Living Room 2" />
+              <img src="assets/room1.png" alt="Living Room 3" />
+            </div>
+
+            <!-- Right: Text and categories -->
+            <div class="furniture-info">
+              <p class="small-title">Categories</p>
+              <h2>Furniture Sets Recommendations</h2>
+
+              <div class="category-list">
+                <div class="category-list">
+                  <div class="category-item active">
+                    <h4>Bedroom</h4>
+                    <p>
+                      Create your perfect rest space with cozy and aesthetic
+                      bedroom designs. Comfort meets elegance for your
+                      relaxation.
+                    </p>
+                  </div>
+
+                  <div class="category-item">
+                    <h4>Living Room</h4>
+                    <p>
+                      Enjoy a great living room aesthetic with your family.
+                      Designs created for increased comfortability.
+                    </p>
+                  </div>
+
+                  <div class="category-item">
+                    <h4>Home Office</h4>
+                    <p>
+                      Design your workspace for productivity and comfort. Modern
+                      furniture tailored for efficiency.
+                    </p>
+                  </div>
+
+                  <div class="category-item">
+                    <h4>Gaming Room</h4>
+                    <p>
+                      Set up your gaming space with style and comfort. Enhance
+                      your experience with premium setups.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+      <div class="products-header">
+        <div>
+          <p class="subtitle">OUR PRODUCTS</p>
+          <h2>This month's best seller</h2>
+        </div>
+        <button class="see-more">SEE MORE</button>
+      </div>
+
+      <div class="product-slider">
+        <div class="product-card">
+          <img src="assets/sofa2.jpg" alt="Annibale Colombo Bed" />
+          <div class="price-tag">$1899.99</div>
+          <p class="product-name">Sofa</p>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/chair.png" alt="Annibale Colombo Sofa" />
+          <div class="price-tag">$2499.99</div>
+          <p class="product-name">Chair</p>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://i.ibb.co.com/DDW23cLH/sofa1.png"
+            alt="Bedside Table African Cherry"
+          />
+          <div class="price-tag">$299.99</div>
+          <p class="product-name">Sofa</p>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/table.png" alt="Knoll Saarinen Chair" />
+          <div class="price-tag">$499.99</div>
+          <p class="product-name">Table</p>
+        </div>
+
+        <!-- Tambahan produk baru -->
+        <div class="product-card">
+          <img src="assets/room2.png" alt="Modern Lamp" />
+          <div class="price-tag">$159.99</div>
+          <p class="product-name">Modern Lamp</p>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="prev">←</button>
+        <button class="next">→</button>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="contact">
+      <section class="newsletter">
+        <p class="newsletter-subtitle">LIMITED DEALS</p>
+        <h3 class="newsletter-title">
+          Become a member and get 10% off of your first purchase
+        </h3>
+
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter your email here" />
+          <button type="submit" class="btn-newsletter">
+            <img src="assets/mail.png" alt="Send" />
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer scroll-animate fade-in">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2 class="footer-logo">🪑 Dekoor</h2>
+          <p class="footer-desc">
+            Dekoor is a furniture company created to fulfill the needs of family
+            with aesthetic feeling in their furniture. Always pay attention to
+            details and give clear communication for the customers. Priority of
+            our design is comfortability.
+          </p>
+          <p class="footer-copy">©Copyright 2025 Dekoor</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-column">
+            <h3>Support</h3>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Care guide</a>
+            <a href="#">Redeem warranty</a>
+          </div>
+          <div class="footer-column">
+            <h3>Social Media</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">TikTok</a>
+          </div>
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <a href="#">Our story</a>
+            <a href="#">Designer</a>
+            <a href="#">Craftsmanship</a>
+            <a href="#">Sustainability</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

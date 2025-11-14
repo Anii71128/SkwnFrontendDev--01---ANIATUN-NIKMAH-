@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Products</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .search-page {
+        padding: 50px;
+        text-align: center;
+      }
+
+      #productInput {
+        width: 60%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #bbb;
+        margin-bottom: 20px;
+      }
+
+      .result-box {
+        margin-top: 30px;
+        display: grid;
+        justify-content: center; /* tengah */
+        grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+        gap: 25px;
+      }
+
+      .result-box img {
+        width: 100%;
+        height: 180px; /* batasi tinggi gambar */
+        object-fit: contain; /* supaya gambar tampak semua */
+        border-radius: 12px;
+        background: #f3f3f3;
+        padding: 10px; /* biar tidak mepet */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="search-page">
+      <h2>Search Product</h2>
+
+      <input type="text" id="productInput" placeholder="Type product name..." />
+
+      <button class="btn-primary" id="btnFind">Search</button>
+
+      <div id="searchResult" class="result-box"></div>
+    </div>
+
+    <script src="search.js"></script>
+  </body>
+</html>
