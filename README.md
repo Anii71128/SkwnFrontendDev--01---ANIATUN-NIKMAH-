@@ -22,8 +22,8 @@ Berikut merupakan dokumen atau link soal tes yang menjadi dasar pembuatan projec
 ├── style.css
 ├── script.js
 ├── assets/
-│   ├── icons/
-│   └── images/
+│   ├── image.png
+│   └── images.png
 └── README.md
 ```
 
